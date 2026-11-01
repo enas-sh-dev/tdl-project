@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(213, 171, 177);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cairo", sans-serif;
+    
+}
+.container {
+    width: 100%;
+    /* بثبت الحجم عند 400حء للشاشات الاكبر */
+    max-width: 500px;
+    background-color: rgba(236, 233, 229, 0.821);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 3px solid rgb(55, 27, 36);
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+}
+#task {
+    width: 80%;
+    height: 30px;
+    border-radius: 8px;
+    border: 3px solid whitesmoke;
+    padding: 12px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s;
+}
+#task:focus {
+    border-color: rgb(213, 171, 177);
+}
+button {
+    background-color: rgb(55, 27, 36);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0 12px;
+    height: 35px;
+    transition: background-color 0.3s;
+    font-style: italic;
+    white-space: nowrap;
+}
+button:hover {
+    background-color: rgb(77, 43, 53) ;
+}
+h1{
+    color: rgb(55, 27, 36);
+    font-size: 35px;
+    font-style: italic;
+}
+#tasklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+#tasklist li{
+    background-color: rgb(213, 171, 177);
+    color: rgb(55, 27, 36);
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 16px;
+    border-right: 5px solid rgb(55, 27, 36);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    /* بتخلي النص ينزل سطر جديد طبيعي بدون ما يقطش الكلمات */
+    white-space: normal;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#tasklist li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 25px;
+    font-weight: bolder;
+} 
+#tasklist li.checked {
+    background-color: rgba(213, 171, 177, 0.389);
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+#final {
+    background-color: rgb(213, 171, 177);
+    width: 175px;
+    border-radius: 10px;
+    padding: 5px;
+    border-right: 5px solid rgb(55, 27, 36);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+#btndeleteall{
+display: none;
+}
+
